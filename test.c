@@ -1,34 +1,20 @@
-#include <stdio.h>
-
-int main()
+#include <string.h>
+void main()
 {
 
-    char str[30];
-    int z = 0;
-    int o = 0;
+    char arr[20];
 
-    int res;
+    // arr = "hey";
 
-    scanf("%s", &str);
+    strcpy(arr, "hey");
 
-    for(int i = 0; i < 30; i++)
-    {
+    // printf("%s", arr);
 
-        if(str[i] == 'z')
-            z+= 1;
+    int a[2] = {1, 2};
+    int b[3];
 
-        else if(str[i] == 'o')
-            o += 1;
+    memcpy(b, a, sizeof(b));
 
-    }
+    printf("%d", b[0]);
 
-    //res = o / z;
-
-    if(2*z == o)
-        printf("Yes");
-
-    else
-        printf("No");
-
-    return 0;
 }

@@ -40,8 +40,14 @@ void main()
     
     displayBoard();
 
-    printf("Congrats! Player %d won!", player);
+    if(gameStatus)
+    {
 
+        printf("Congrats! Player %d won!", player);
+
+    }
+    else
+        printf("\n\n	  DRAW! \n");
 }
 
 int checkForWin()
