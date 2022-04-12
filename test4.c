@@ -1,19 +1,12 @@
 #include <stdio.h>
+#include <math.h>
 
-void main()
+int main()
 {
 
-    int a = 6;
+  float n = 12.4;
 
-    while(!(a >= 1 && a <= 12))
-    {
+  printf("%f", ceil(n));
 
-        a -= 12;
-    }
-
-    // printf("%d", a);
-
-    if(a == )
-
-
+    return 0;
 }

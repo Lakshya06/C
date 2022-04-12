@@ -1,0 +1,5 @@
+
+struct factorialLoop
+{
+    /* data */
+};
