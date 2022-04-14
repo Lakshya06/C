@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	 int n, digitCount, number, sum, rem, i=100, count=1;
+	//  clrscr();
+	 printf("Enter how many Armstrong numbers? \n");
+	 scanf("%d", &n);
+
+	 /* Generating Armstrong Numbers */
+	 while(count <= n)
+	 {
+
+		  /* Finding number of digits */
+		  number = i;
+		  digitCount = 0;
+		  while(number != 0)
+		  {
+			   digitCount++;
+			   number = number/10;
+		  }
+
+		  /* Finding sum */
+		  number = i;
+		  sum = 0;
+		  while(number != 0)
+		  {
+			   rem = number%10;
+			   sum = sum + pow(rem, digitCount);
+			   number = number/10;
+		  }
+
+		  /* Making Decision and Printing */
+		  if(sum == i)
+		  {
+			   printf("%d\t", i);
+			   count++;
+		  }
+		  i++;
+	 }
+	//  getch();
+	 return(0);
+}
